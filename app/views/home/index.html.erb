@@ -1,2 +1,7 @@
-<h1>Welcome to the PhotoApp</h1>
-<p>This is the demo Photo App</p>
+<div class="jumbotron center">
+  <h1>Welcome to the PhotoApp</h1>
+  <p>This is the demo Photo App</p>
+
+  <%= link_to 'Login', new_user_session_path, class: "btn btn-success" %>
+  <%= link_to 'Join', new_user_registration_path, class: "btn btn-primary" %>
+</div>
