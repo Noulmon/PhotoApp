@@ -4,8 +4,14 @@
   <% if user_signed_in? %>
     <%= link_to 'Logout', destroy_user_session_path, method: :delete, class: "btn btn-danger" %>
     <%= link_to 'Edit Profile', edit_user_registration_path, class: "btn btn-primary" %>
+    <%= link_to 'List Pins', pins_path, class: 'btn btn-warning' %>
   <% else %>
     <%= link_to 'Login', new_user_session_path, class: "btn btn-success" %>
     <%= link_to 'Join', new_user_registration_path, class: "btn btn-primary" %>
+    <!-- <%= link_to "Google", "https://www.google.com", :popup =>   ['new_window_name','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes'], :target => '_blank', :class => '_blankx' %> -->
+    <!-- <%= link_to 'about', about_path, :onclick =>
+"javascript:(function(ele) { window.open(ele.href, ele.title,
+'toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes')
+})(this); return false;" %> -->
   <% end %>
 </div>
